@@ -1,0 +1,48 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Lucashgdhhyy/Durklua/refs/heads/main/Script/Orion/Orion.lua')))()
+local Window = OrionLib:MakeWindow({Name = "W-rever V1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "W-rever"})
+
+local BTab = Window:MakeTab({
+	Name = "Blox fruit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+BTab:AddButton({
+	Name = "Redz Hub",
+	Callback = function()
+    OrionLib:MakeNotification({
+	Name = "Redz Hub",
+	Content = "Starting script",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+
+BTab:AddButton({
+	Name = "Speed Hub X",
+	Callback = function()
+      		OrionLib:MakeNotification({
+	Name = "Speed Hub X",
+	Content = "Starting script",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+  	end    
+})
+
+BTab:AddButton({
+	Name = "Domadic Hub",
+	Callback = function()
+      		OrionLib:MakeNotification({
+	Name = "Domadic Hub",
+	Content = "Starting script",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+
+  	end    
+})
+
+OrionLib:Init()
